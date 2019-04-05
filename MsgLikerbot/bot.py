@@ -2,7 +2,7 @@ import json
 import requests
 import time
 
-TOKEN = null #API token
+TOKEN = None #API token
 FATHER_CHAT_ID = 610513796
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
