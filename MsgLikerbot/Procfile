@@ -1,0 +1,2 @@
+web: gunicorn messagelikerbot.wsgi --log-file -
+worker: python messagelikerbot.py
