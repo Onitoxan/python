@@ -2,16 +2,12 @@ import json
 import requests
 import time
 
-TOKEN = '861342303:AAHePPsFMoTZqoUb-Hq27TFCgLhwC-H1Jag'
-FATHER_CHAT_ID = 610513796
+TOKEN = None # Place here your telegram API Token
+FATHER_CHAT_ID = None #This is your telegram chat_id to let the bot send you any kind of error
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 EMOJI_CORAZON = "\u2764\ufe0f"
 EMOJI_STOP = "\u26d4\ufe0f"
-    #with open("./MsgLikerbotDB.json", encoding="utf-8") as f:  # AÑADIR BASE DE DATO, AQUI SOLO SE ABRE.
-#    database = json.load(f)
-
-#print(database)
-
+   
 
 def get_url(url):
     response = requests.get(url)
